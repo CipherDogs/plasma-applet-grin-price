@@ -1,23 +1,5 @@
 var sources = [
 	{
-		name: 'CoinMarketCap',
-		url: 'https://api.coinmarketcap.com/v1/ticker/grin/',
-		homepage: 'https://coinmarketcap.com/currencies/grin/',
-		currency: 'USD',
-		getRate: function(data) {
-			return data[0].price_usd;
-		}
-	},
-	{
-		name: 'Bitfinex',
-		url: 'https://api.bitfinex.com/v1/pubticker/grinusd',
-		homepage: 'https://www.bitfinex.com/',
-		currency: 'USD',
-		getRate: function(data) {
-			return data.ask;
-		}
-	},
-	{
 		name: 'BW',
 		url: 'https://www.bw.com/exchange/config/controller/website/pricecontroller/getassistprice',
 		homepage: 'https://www.bw.com/',
@@ -32,20 +14,20 @@ var currencyApiUrl = 'http://api.fixer.io';
 
 var currencySymbols = {
 	'USD': '$',  // US Dollar
-	'EUR': '€',  // Euro
-	'CZK': 'Kč', // Czech Coruna
-	'GBP': '£',  // British Pound Sterling
-	'ILS': '₪',  // Israeli New Sheqel
-	'INR': '₹',  // Indian Rupee
-	'JPY': '¥',  // Japanese Yen
-	'KRW': '₩',  // South Korean Won
-	'PHP': '₱',  // Philippine Peso
-	'PLN': 'zł', // Polish Zloty
-	'THB': '฿',  // Thai Baht
+	// 'EUR': '€',  // Euro
+	// 'CZK': 'Kč', // Czech Coruna
+	// 'GBP': '£',  // British Pound Sterling
+	// 'ILS': '₪',  // Israeli New Sheqel
+	// 'INR': '₹',  // Indian Rupee
+	// 'JPY': '¥',  // Japanese Yen
+	// 'KRW': '₩',  // South Korean Won
+	// 'PHP': '₱',  // Philippine Peso
+	// 'PLN': 'zł', // Polish Zloty
+	// 'THB': '฿',  // Thai Baht
 };
 
 function getRate(source, currency, callback) {
-	var source = typeof source === 'undefined' ? getSourceByName('CoinMarketCap') : getSourceByName(source);
+	var source = typeof source === 'undefined' ? getSourceByName('BW') : getSourceByName(source);
 	
 	if(source === null) return false;
 	

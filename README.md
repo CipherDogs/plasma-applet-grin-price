@@ -11,8 +11,7 @@ kpackagetool5 -t Plasma/Applet --install ./package/
 Use additional `-g` flag to install plasmoid globally, for all users.
 
 ## Supported sources
-- CoinMarketCap
-- Bitfinex
+- BW
 
 ## Supported currencies
 - USD ($) - US Dollar
