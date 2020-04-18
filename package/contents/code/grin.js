@@ -17,6 +17,15 @@ var sources = [
 			return data.ask;
 		}
 	},
+	{
+		name: 'BW',
+		url: 'https://www.bw.com/exchange/config/controller/website/pricecontroller/getassistprice',
+		homepage: 'https://www.bw.com/',
+		currency: 'USD',
+		getRate: function(data) {
+			return data.datas.usd.grin;
+		}
+	},
 ];
 
 var currencyApiUrl = 'http://api.fixer.io';
