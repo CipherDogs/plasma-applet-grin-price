@@ -8,4 +8,4 @@ run:
 
 .PHONY: zip
 zip:
-	zip -r grinprice-1.2.plasmoid ./package/
+	zip -r grinprice-1.1.plasmoid ./package/
