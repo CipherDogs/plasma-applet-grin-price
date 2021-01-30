@@ -7,9 +7,9 @@
   <group name="General">
     <entry name="source" type="String">
       <label>Source</label>
-      <default>BW</default>
+      <default>Cryptonator</default>
     </entry>
-	<entry name="currency" type="String">
+      <entry name="currency" type="String">
       <label>Currency</label>
       <default>USD</default>
     </entry>

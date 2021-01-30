@@ -5,18 +5,19 @@ Plasma applet showing the current price of Grin from various markets to choose f
 
 ## Installation
 ```
-kpackagetool5 -t Plasma/Applet --install ./package/
+make install
 ```
 
-Use additional `-g` flag to install plasmoid globally, for all users.
+## Run
+
+Run Plasma widgets in their own window. On Ubuntu you need to install `plasma-sdk`
+
+```
+make run
+```
 
 ## Supported sources
-- BW
+- Cryptonator
 
 ## Supported currencies
 - USD ($) - US Dollar
-
-## Changelog
-
-### 1.0
-Initial release
